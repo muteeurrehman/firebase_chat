@@ -5,4 +5,8 @@ class WelcomeController extends GetxController {
   final state = WelcomeState();
 
   WelcomeController();
+
+  changePage(int index) {
+    state.index.value = index;
+  }
 }
