@@ -62,7 +62,9 @@ class WelcomeScreen extends GetView<WelcomeController> {
                         Positioned(
                           bottom: 95,
                           child: ElevatedButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              controller.handleSignin();
+                            },
                             style: ButtonStyle(
                                 backgroundColor:
                                     MaterialStateProperty.all(Colors.white),
